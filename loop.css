@@ -1,0 +1,32 @@
+.cloud01{
+    animation: float 25s linear infinite;
+}
+.cloud02{
+    /* 5s is a delay */
+    animation: float 30s 5s linear infinite backwards;
+}
+@keyframes float {
+    0% { 
+        transform: translateX(-150px);
+    }
+    100% { 
+        transform: translateX(826px); 
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 800px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.city, .cloud {position: absolute;}
+.city {z-index: 100;}
+
+.cloud01 {top: 76px;}
+.cloud02 {top: 30px;}

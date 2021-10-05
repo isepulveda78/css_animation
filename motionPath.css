@@ -1,0 +1,28 @@
+.bot {
+    width:100px;
+    /* auto makes oriented to the path. 45deg makes the robot look forward */
+    offset-rotate: auto 45deg;
+    offset-path: path('M0,582.961s295.831-191.42,658.369-194.32,440.846,194.32,696.073,194.32S1920,388.641,1920,388.641');
+    animation: fly 9s cubic-bezier(.92, 0, .76, 1) both;
+  }
+  
+  @keyframes fly{
+      0%{
+          offset-distance: 0%;
+      }
+      100%{
+          offset-distance: 100%;
+      }
+  }
+  /* other styles */
+  .wrap {
+    width:800px;
+  }
+  
+  
+  body {
+    margin:8em 0 0 0;
+    background:#433f55;
+    display: flex;
+    justify-content: center; 
+  }
